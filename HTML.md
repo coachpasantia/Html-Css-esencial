@@ -117,19 +117,19 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Una de las primeras cosas que se estudian cuando se está aprendiendo HTML es que las etiquetas deben cerrarse, y en el mismo orden en el que se abrieron.
 
     Mal:
-    ~~~
+    ```html
     <div>
         <p>Contenido
         <p>Contenido</p>
     </div>
-    ~~~
+    ```
     Bien:
-    ~~~
+    ```html
     <div>
         <p>Contenido</p>
         <p>Contenido</p>
     </div>
-    ~~~
+    ```
     Cabe destacar que en HTML5 se introdujeron las etiquetas vacías (void tags en inglés) que son un caso especial que no necesitan etiqueta de cierre.
 
     Dichas etiquetas son:
@@ -141,19 +141,19 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     A pesar de no afectar al funcionamiento de la página, es una recomendación escribir siempre las etiquetas, atributos y valores en minúsculas, ya que mejora la legibilidad del código.
 
     Mal:
-    ~~~
+    ```html
     <SECTION>
         <h1>Título</H1>
         <P>Contenido</P>
     <section>
-    ~~~
+    ```
     Bien:
-    ~~~
+    ```html
     <section>
         <h1>Título</h1>
         <p>Contenido</p>
     <section>
-    ~~~
+    ```
 
 4. Usa el atributo ALT en imágenes
     
@@ -163,11 +163,14 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 
     Mal:
 
-    ``<img src="img/logo.png">``
+    ```html
+    <img src="img/logo.png">
+    ```
     
     Bien:
-
-    ``<img src="img/logo.png" alt="Logo">``
+    ```html
+    <img src="img/logo.png" alt="Logo">
+    ```
 
 5. Usa una indentación consistente
     
@@ -180,7 +183,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Sea como sea (con tabulaciones, dos, tres espacios,…) lo importante es que sea consistente en todo el código.
 
     Mal:
-    ~~~
+    ```html
     <div>
       <h1>Título</h1>
        <ul>
@@ -189,9 +192,9 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     <li>Elemento 3</li>
    </ul>
    </div>
-   ~~~ 
+   ```
     Bien:
-    ~~~
+    ```html
     <div>
         <h1>Título</h1>
             <ul>
@@ -200,7 +203,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
                 <li>Elemento 3</li>
             </ul>
     </div>
-    ~~~
+    ```
 
 6. Separa el contenido de la presentación
     
@@ -212,11 +215,15 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 
     Mal:
 
-    ``<p style="color: red;">Información</p>``
+    ```html
+    <p style="color: red;">Información</p>
+    ```
     
     Bien:
 
-    ``<p class="alerta">Información</p>``
+    ```html
+    <p class="alerta">Información</p>
+    ```
 
 7. Usa etiquetas semánticas y evita la Divitis
     
@@ -229,7 +236,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     ``<header>, <aside>, <section>, <article>, <menu>, <footer>...``
     
     Mal:
-    ~~~
+    ```html
     <div id="encabezado"></div>
         <div id="navegacion"></div>
             <div id="contenido">
@@ -237,10 +244,10 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
                 <div class="articulo"></div>
             </div>
         <div id="pie"></div>
-    ~~~
+    ```
     
     Bien:
-    ~~~
+    ```html
     <header></header>
         <nav></nav>
         <main>
@@ -248,7 +255,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
             <article></article>
         </main>
     <footer></footer>
-    ~~~
+    ```
 
 8. Omite el valor de atributos booleanos
     
@@ -261,10 +268,13 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 
     Mal:
 
-    ``<input type="checkbox" name="ejemplo" checked="checked">``
+    ```html
+    <input type="checkbox" name="ejemplo" checked="checked">
+    ```
     Bien:
-
-    ``<input type="checkbox" name="ejemplo" checked>``
+    ```html
+    <input type="checkbox" name="ejemplo" checked>
+    ```
 
 9. Especifica la codificación de caracteres
     
@@ -272,7 +282,8 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 
     Para especificarla, debemos añadir la siguiente línea al header de la página:
 
-    ``<meta charset="UTF-8"/>``
+    ```html
+    <meta charset="UTF-8"/>```
     En este caso indicamos como sistema de codificación UTF-8 al ser el más extendido y usado.
 
 10. Valida tu código
