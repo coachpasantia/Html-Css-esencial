@@ -99,6 +99,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 ## Buenas Practicas en HTML
 
 1. Declara el DOCTYPE
+    
     A través de la declaración del tipo de documento, o DOCTYPE, indicamos el estándar usado al construir un documento HTML. De esta forma, los navegadores que lean esta declaración interpretarán el documento con el lenguaje y versión definidos.
     Cabe destacar que, estando en 2017, no debemos usar un DOCTYPE obsoleto, y utilizar siempre la versión recomendada de HTML, que a día de hoy es HTML5.
 
@@ -112,6 +113,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
 
 
 2. Cierra las etiquetas
+    
     Una de las primeras cosas que se estudian cuando se está aprendiendo HTML es que las etiquetas deben cerrarse, y en el mismo orden en el que se abrieron.
 
     Mal:
@@ -135,6 +137,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Puedes consultar más información sobre las etiquetas vacías en el siguiente enlace.
 
 3. Usa minúsculas en los nombres de etiquetas, atributos y valores
+    
     A pesar de no afectar al funcionamiento de la página, es una recomendación escribir siempre las etiquetas, atributos y valores en minúsculas, ya que mejora la legibilidad del código.
 
     Mal:
@@ -153,6 +156,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     ~~~
 
 4. Usa el atributo ALT en imágenes
+    
     Las imágenes deben incluir siempre dicho atributo, que proporciona, como su nombre indica, un texto alternativo a la imagen. Su uso mejora la accesibilidad ya que, por ejemplo, los lectores de pantalla se basan en este atributo para proporcionar un contexto a las imágenes.
 
     Dicho valor debe ser lo suficientemente descriptivo al contenido. Si la imagen no tiene ninguna relevancia (como un icono, por ejemplo), es recomendable seguir incluyendo el atributo, aunque esté vacío.
@@ -160,11 +164,13 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Mal:
 
     ``<img src="img/logo.png">``
+    
     Bien:
 
     ``<img src="img/logo.png" alt="Logo">``
 
 5. Usa una indentación consistente
+    
     Esto es aplicable a cualquier lenguaje: un código con mala indentación o sin ella carece en gran medida de legibilidad.
 
     Indentar es utilizar espacios a la derecha de cada línea con el objetivo de mejorar la legibilidad del código, por lo que es un aspecto importante y que deberías tener siempre en cuenta al programar.
@@ -197,6 +203,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     ~~~
 
 6. Separa el contenido de la presentación
+    
     No uses estilos en línea. HTML es el contenido, y CSS proporciona la presentación visual de dicho contenido. No los mezcles.
 
     Al mezclarlos, se consiguen páginas más lentas, difíciles de leer y mantener. Tener el estilo y el contenido separado ayudará al equipo de desarrollo a realizar cambios y mantenimiento de una forma mucho más eficiente.
@@ -206,11 +213,13 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Mal:
 
     ``<p style="color: red;">Información</p>``
+    
     Bien:
 
     ``<p class="alerta">Información</p>``
 
 7. Usa etiquetas semánticas y evita la Divitis
+    
     Se podría definir Divitis como esa mala práctica de usar divs para organizar todo el contenido de la página. Aunque funciona, empeora la legibilidad y sobrecarga el código.
 
     Es más recomendable mantener nuestro código lo más limpio y reducido posible, reduciendo el uso de clases e id innecesarios para vincular estilos a un solo elemento.
@@ -218,6 +227,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     Para ello, podemos utilizar los elementos estructurales de HTML5 de forma adecuada, como:
 
     ``<header>, <aside>, <section>, <article>, <menu>, <footer>...``
+    
     Mal:
     ~~~
     <div id="encabezado"></div>
@@ -228,6 +238,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
             </div>
         <div id="pie"></div>
     ~~~
+    
     Bien:
     ~~~
     <header></header>
@@ -240,6 +251,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     ~~~
 
 8. Omite el valor de atributos booleanos
+    
     Existen atributos en HTML conocidos como atributos booleanos. Según el estándar, y a pesar de lo que pueda parecer, estos atributos no admiten los valores true o false, se representan incluyendo (true) u omitiendo (false) su nombre.
 
     Son ejemplos de atributos booleanos:
@@ -255,6 +267,7 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     ``<input type="checkbox" name="ejemplo" checked>``
 
 9. Especifica la codificación de caracteres
+    
     También de las más conocidas, especificar correctamente la codificación de caracteres nos permitirá la correcta visualización del contenido de nuestra página, incluyendo tildes y caracteres especiales como ñ, indicando al navegador cómo debe interpretarlos.
 
     Para especificarla, debemos añadir la siguiente línea al header de la página:
@@ -263,10 +276,17 @@ Un atributo HTML es un valor o propiedad que añades a una etiqueta HTML.
     En este caso indicamos como sistema de codificación UTF-8 al ser el más extendido y usado.
 
 10. Valida tu código
-    La última práctica que vamos a mencionar en este artículo es validar nuestro código para comprobar que cumple con los estándares. Y qué mejor forma para validarlo que usando la herramienta realizada por la misma organización que establece dichos estándares: W3C.
+    
+    Cuando Validamos nuestro  código comprobamos que cumple con los estándares. Y qué mejor forma para validarlo que usando la herramienta realizada por la misma organización que establece dichos estándares: W3C.
 
     Hay que tener en cuenta que no nos debemos obsesionar con el resultado, ya que no obtener la validación completa no quiere decir siempre que sea un mal código. Podéis comprobar el resultado de la validación de páginas como Google, Twitter o incluso GitHub para daros cuenta que tampoco son sitios perfectos.
+
 ![validacion](./assets/validador-html-w3c.png)
 
 Enlace del servicio de validación:
 [enlace](https://validator.w3.org/)
+
+
+## Referencia
+Enlace de documentación recomendada:
+[enlace](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics "Docs Mozilla Developer")
